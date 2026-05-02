@@ -84,8 +84,8 @@ class BookBloc extends Bloc<BookEvent, BookState> {
       (s) => s.id == event.sectionId,
     ).firstOrNull;
 
-    if (section != null && section.startPage >= 0) {
-      emit(state.copyWith(currentPageIndex: section.startPage));
+    if (section != null && section.startPage != null && section.startPage! >= 0) {
+      emit(state.copyWith(currentPageIndex: section.startPage!));
     }
   }
 

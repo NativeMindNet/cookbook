@@ -129,11 +129,13 @@ class AppDrawer extends StatelessWidget {
           ),
         ),
         ...sections.map((section) => ListTile(
-              title: Text(section.title),
+              title: Text(section.titleText ?? ''),
               dense: true,
               onTap: () {
-                Navigator.pop(context);
-                onSectionTap?.call(section.startPage);
+                if (section.startPage != null) {
+                  Navigator.pop(context);
+                  onSectionTap?.call(section.startPage!);
+                }
               },
             )),
       ],
