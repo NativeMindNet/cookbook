@@ -35,6 +35,7 @@ IN PROGRESS
 
 Key decisions and context for resuming:
 
+- Дополнительные визуальные потоки книги (RU, референс-макеты): **`flows/vdd-cookbook-layout-cook`**; вкладка ингредиентов в хабе кухни: **`flows/vdd-cookbook-layout-ingredients`**; мастер замены: **`flows/vdd-cookbook-layout-ingredients-replacement`**.
 - Миграция с legacy iOS (Objective-C) проекта на Flutter
 - **Вегетарианская кулинарная книга** (без мяса, рыбы, яиц)
 - **Платформы**: iOS, Android, Windows, Linux, macOS (5 платформ)
