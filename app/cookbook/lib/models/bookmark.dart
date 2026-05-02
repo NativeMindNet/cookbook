@@ -1,26 +1,30 @@
 import 'package:equatable/equatable.dart';
 
 class Bookmark extends Equatable {
-  final int pageNumber;
+  final String id;
+  final int pageIndex;
   final String? title;
   final DateTime createdAt;
   final String? note;
 
   const Bookmark({
-    required this.pageNumber,
+    required this.id,
+    required this.pageIndex,
     this.title,
     required this.createdAt,
     this.note,
   });
 
   Bookmark copyWith({
-    int? pageNumber,
+    String? id,
+    int? pageIndex,
     String? title,
     DateTime? createdAt,
     String? note,
   }) {
     return Bookmark(
-      pageNumber: pageNumber ?? this.pageNumber,
+      id: id ?? this.id,
+      pageIndex: pageIndex ?? this.pageIndex,
       title: title ?? this.title,
       createdAt: createdAt ?? this.createdAt,
       note: note ?? this.note,
@@ -29,7 +33,8 @@ class Bookmark extends Equatable {
 
   Map<String, dynamic> toJson() {
     return {
-      'pageNumber': pageNumber,
+      'id': id,
+      'pageIndex': pageIndex,
       'title': title,
       'createdAt': createdAt.toIso8601String(),
       'note': note,
@@ -38,7 +43,8 @@ class Bookmark extends Equatable {
 
   factory Bookmark.fromJson(Map<String, dynamic> json) {
     return Bookmark(
-      pageNumber: json['pageNumber'] as int,
+      id: json['id'] as String? ?? DateTime.now().millisecondsSinceEpoch.toString(),
+      pageIndex: json['pageIndex'] as int? ?? json['pageNumber'] as int? ?? 0,
       title: json['title'] as String?,
       createdAt: DateTime.parse(json['createdAt'] as String),
       note: json['note'] as String?,
@@ -46,5 +52,5 @@ class Bookmark extends Equatable {
   }
 
   @override
-  List<Object?> get props => [pageNumber, title, createdAt, note];
+  List<Object?> get props => [id, pageIndex, title, createdAt, note];
 }
