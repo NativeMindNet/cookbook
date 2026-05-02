@@ -1,7 +1,7 @@
 # Implementation Plan: cookbook-route-deeplink
 
 > Version: 1.0  
-> Status: DRAFT  
+> Status: APPROVED  
 > Last Updated: 2026-05-02  
 > Specifications: [02-specifications.md](./02-specifications.md)
 
@@ -155,6 +155,6 @@ Task 2.1 ───────────────────────�
 
 ## Approval
 
-- [ ] Reviewed by:
-- [ ] Approved on:
-- [ ] Notes:
+- [x] Reviewed by: Product (async / chat)
+- [x] Approved on: 2026-05-02
+- [x] Notes: Приступать к задачам Phase 1 → 4 по порядку зависимостей в плане.

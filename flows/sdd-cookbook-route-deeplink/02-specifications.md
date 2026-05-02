@@ -1,7 +1,7 @@
 # Specifications: cookbook-route-deeplink
 
 > Version: 1.0  
-> Status: DRAFT  
+> Status: APPROVED  
 > Last Updated: 2026-05-02  
 > Requirements: [01-requirements.md](./01-requirements.md)
 
@@ -192,6 +192,6 @@ Uri storeUrl(StoreVendor v, EnvStoreUrls env);
 
 ## Approval
 
-- [ ] Reviewed by:
-- [ ] Approved on:
-- [ ] Notes:
+- [x] Reviewed by: Product (async / chat)
+- [x] Approved on: 2026-05-02
+- [x] Notes: Пункты в «Open Design Questions» могут уточняться в ходе имплементации без повторного полного цикла SDD, если не меняют контракт URL.

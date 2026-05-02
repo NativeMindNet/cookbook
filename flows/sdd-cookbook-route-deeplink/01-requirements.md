@@ -1,7 +1,7 @@
 # Requirements: cookbook-route-deeplink
 
 > Version: 1.0  
-> Status: DRAFT  
+> Status: APPROVED  
 > Last Updated: 2026-05-02
 
 ## Problem Statement
@@ -81,6 +81,6 @@
 
 ## Approval
 
-- [ ] Reviewed by:
-- [ ] Approved on:
-- [ ] Notes:
+- [x] Reviewed by: Product (async / chat)
+- [x] Approved on: 2026-05-02
+- [x] Notes: Requirements approved together with specifications and implementation plan.

@@ -2,15 +2,15 @@
 
 ## Current Phase
 
-SPECIFICATIONS
+IMPLEMENTATION
 
 ## Phase Status
 
-DRAFTING
+APPROVED
 
 ## Last Updated
 
-2026-05-02
+2026-05-02 — implementation landed (routing, deeplink, web install prompt)
 
 ## Blockers
 
@@ -19,13 +19,13 @@ DRAFTING
 ## Progress
 
 - [x] Requirements drafted
-- [ ] Requirements approved
+- [x] Requirements approved
 - [x] Specifications drafted
-- [ ] Specifications approved
+- [x] Specifications approved
 - [x] Plan drafted
-- [ ] Plan approved
-- [ ] Implementation started
-- [ ] Implementation complete
+- [x] Plan approved
+- [x] Implementation started
+- [x] Implementation complete (hosting verification: publish assetlinks + AASA at domain root)
 
 ## Context Notes
 
@@ -35,6 +35,6 @@ DRAFTING
 
 ## Next Actions
 
-1. Утвердить `01-requirements.md`.
-2. Утвердить `02-specifications.md` и при необходимости поправить маппинг страна→стор.
-3. После «plan approved» — реализация по `03-plan.md`.
+1. Опубликовать на **корне** хоста `nativemindnet.github.io` файлы `.well-known/assetlinks.json` и `.well-known/apple-app-site-association` (не под `/cookbook/web/`).
+2. После `flutter build web --base-href /cookbook/web/` выполнить `tool/copy_web_404_for_github_pages.sh`.
+3. Заменить `APPSTORE_URL` в `.env` на реальную ссылку App Store перед релизом iOS.

@@ -11,6 +11,8 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
 
   # UI
   cupertino_icons: ^1.0.8
@@ -34,6 +36,12 @@ dependencies:
   intl: ^0.20.2
   collection: ^1.18.0
 
+  # Routing & links
+  go_router: ^14.6.2
+  app_links: ^6.3.2
+  flutter_dotenv: ^5.2.1
+  url_launcher: ^6.3.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -46,6 +54,7 @@ flutter:
   generate: true
 
   assets:
+    - .env
     - assets/images/content/
     - assets/images/covers/
     - assets/images/sprites/
