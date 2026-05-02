@@ -36,6 +36,7 @@ REVIEW
 Key decisions and context for resuming:
 
 - Миграция с legacy iOS (Objective-C) проекта на Flutter
+- **Вегетарианская кулинарная книга** (без мяса, рыбы, яиц)
 - **Платформы**: iOS, Android, Windows, Linux, macOS (5 платформ)
 - **Ориентация**: Portrait + Landscape обязательно
 - **Изображения**: В бандле (~620MB)
