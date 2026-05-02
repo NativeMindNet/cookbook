@@ -1,7 +1,7 @@
 # План имплементации: Vegetarian Cookbook Flutter App
 
 > Version: 1.0
-> Status: DRAFT
+> Status: APPROVED
 > Last Updated: 2026-05-02
 > Specifications: [03-specifications.md](03-specifications.md)
 
@@ -486,6 +486,6 @@ Phase 6: Полировка
 
 ## Approval
 
-- [ ] Reviewed by: [name]
-- [ ] Approved on: [date]
-- [ ] Notes: [any conditions or clarifications]
+- [x] Reviewed by: Anton
+- [x] Approved on: 2026-05-02
+- [x] Notes: 6 фаз, ~30 задач, начинаем имплементацию

@@ -1,0 +1,47 @@
+{
+  "@@locale": "ru",
+  "appTitle": "Вегетарианская кулинарная книга",
+  "search": "Поиск",
+  "bookmarks": "Закладки",
+  "settings": "Настройки",
+  "language": "Язык",
+  "searchPlaceholder": "Введите текст для поиска...",
+  "searchTabText": "Текст",
+  "searchTabTitles": "Заголовки",
+  "searchTabComments": "Заметки",
+  "noResults": "Ничего не найдено",
+  "resultsCount": "{count} результатов",
+  "@resultsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pageOf": "Страница {current} из {total}",
+  "@pageOf": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "loading": "Загрузка...",
+  "error": "Ошибка",
+  "retry": "Повторить",
+  "cancel": "Отмена",
+  "addBookmark": "Добавить закладку",
+  "removeBookmark": "Удалить закладку",
+  "noBookmarks": "У вас пока нет закладок",
+  "audioPlayer": "Аудио плеер",
+  "sections": "Разделы",
+  "salads": "Салаты",
+  "soups": "Супы",
+  "mainCourses": "Горячее",
+  "desserts": "Десерты",
+  "drinks": "Напитки",
+  "ingredients": "Ингредиенты",
+  "preparation": "Приготовление",
+  "servings": "Порций",
+  "prepTime": "Время подготовки",
+  "cookTime": "Время приготовления"
+}
