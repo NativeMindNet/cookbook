@@ -1,7 +1,7 @@
 # Visual Mockups: Cookbook Layout Migration
 
 > Version: 1.0
-> Status: DRAFT
+> Status: APPROVED
 > Last Updated: 2026-05-02
 
 ## Обзор
@@ -684,6 +684,6 @@ Bookmarks:
 
 ## Approval
 
-- [ ] Reviewed by: [name]
-- [ ] Approved on: [date]
-- [ ] Notes: [any conditions or clarifications]
+- [x] Reviewed by: Anton
+- [x] Approved on: 2026-05-02
+- [x] Notes: Вегетарианская книга, примеры с мороженым ГОСТ без яиц

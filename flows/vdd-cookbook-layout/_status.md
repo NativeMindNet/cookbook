@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-VISUAL
+PLAN
 
 ## Phase Status
 
@@ -21,7 +21,11 @@ REVIEW
 - [x] Requirements drafted
 - [x] Requirements approved
 - [x] Visual mockups drafted
-- [ ] Visual approved  <- current
+- [x] Visual approved
+- [x] Specifications drafted
+- [x] Specifications approved
+- [x] Plan drafted
+- [ ] Plan approved  <- current
 - [ ] Specifications drafted
 - [ ] Specifications approved
 - [ ] Plan drafted
