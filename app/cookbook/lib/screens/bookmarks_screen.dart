@@ -9,6 +9,7 @@ import '../bloc/book/book_event.dart';
 import '../models/bookmark.dart';
 import '../widgets/common/error_view.dart';
 import '../widgets/common/loading_indicator.dart';
+import '../widgets/share/share_current_route_button.dart';
 
 class BookmarksScreen extends StatelessWidget {
   const BookmarksScreen({super.key});
@@ -19,6 +20,7 @@ class BookmarksScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Закладки'),
         actions: [
+          const ShareCurrentRouteButton(),
           PopupMenuButton<String>(
             onSelected: (value) {
               // Handle sort options

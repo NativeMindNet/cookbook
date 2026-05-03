@@ -6,11 +6,12 @@ import '../bloc/book/book_state.dart';
 import '../bloc/book/book_event.dart';
 import '../bloc/bookmarks/bookmarks_bloc.dart';
 import '../bloc/bookmarks/bookmarks_event.dart';
+import '../bloc/bookmarks/bookmarks_state.dart';
 import '../widgets/common/loading_indicator.dart';
 import '../widgets/common/error_view.dart';
-import '../widgets/common/responsive_layout.dart';
 import '../widgets/page_view/book_page_view.dart';
 import '../widgets/drawer/app_drawer.dart';
+import '../widgets/share/share_current_route_button.dart';
 import '../utils/responsive_breakpoints.dart';
 
 class MainScreen extends StatefulWidget {
@@ -23,6 +24,16 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   final PageController _pageController = PageController();
   bool _showControls = true;
+
+  /// Web share URL must include the open page; [GoRouter] may still be on `/book`.
+  String _bookShareLocation(BuildContext context, int pageIndex) {
+    final uri = GoRouterState.of(context).uri;
+    final path = '/book/$pageIndex';
+    if (!uri.hasQuery) {
+      return path;
+    }
+    return '$path?${uri.query}';
+  }
 
   @override
   void dispose() {
@@ -202,28 +213,42 @@ class _MainScreenState extends State<MainScreen> {
                       '${state.currentPageIndex + 1} / ${state.totalPages}',
                       style: const TextStyle(color: Colors.white),
                     ),
-                    // Bookmark button
-                    BlocBuilder<BookmarksBloc, dynamic>(
-                      builder: (context, bookmarksState) {
-                        final isBookmarked = bookmarksState is dynamic &&
-                            bookmarksState.isPageBookmarked != null &&
-                            bookmarksState.isPageBookmarked(state.currentPageIndex);
-
-                        return IconButton(
-                          icon: Icon(
-                            isBookmarked ? Icons.bookmark : Icons.bookmark_border,
-                            color: Colors.white,
+                    Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        ShareCurrentRouteButton(
+                          icon: Icons.share,
+                          iconColor: Colors.white,
+                          locationOverride: _bookShareLocation(
+                            context,
+                            state.currentPageIndex,
                           ),
-                          onPressed: () {
-                            context.read<BookmarksBloc>().add(
-                                  BookmarkToggled(
-                                    pageIndex: state.currentPageIndex,
-                                    title: state.currentPage?.title,
-                                  ),
-                                );
+                        ),
+                        BlocBuilder<BookmarksBloc, BookmarksState>(
+                          builder: (context, bookmarksState) {
+                            final isBookmarked = bookmarksState.isPageBookmarked(
+                              state.currentPageIndex,
+                            );
+
+                            return IconButton(
+                              icon: Icon(
+                                isBookmarked
+                                    ? Icons.bookmark
+                                    : Icons.bookmark_border,
+                                color: Colors.white,
+                              ),
+                              onPressed: () {
+                                context.read<BookmarksBloc>().add(
+                                      BookmarkToggled(
+                                        pageIndex: state.currentPageIndex,
+                                        title: state.currentPage?.title,
+                                      ),
+                                    );
+                              },
+                            );
                           },
-                        );
-                      },
+                        ),
+                      ],
                     ),
                   ],
                 ),

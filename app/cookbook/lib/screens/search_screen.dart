@@ -8,6 +8,7 @@ import '../bloc/book/book_bloc.dart';
 import '../bloc/book/book_event.dart';
 import '../widgets/common/loading_indicator.dart';
 import '../widgets/common/error_view.dart';
+import '../widgets/share/share_current_route_button.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
@@ -41,6 +42,7 @@ class _SearchScreenState extends State<SearchScreen> {
           },
         ),
         actions: [
+          const ShareCurrentRouteButton(),
           IconButton(
             icon: const Icon(Icons.clear),
             onPressed: () {

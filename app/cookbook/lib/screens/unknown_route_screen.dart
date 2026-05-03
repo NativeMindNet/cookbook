@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../widgets/share/share_current_route_button.dart';
+
 class UnknownRouteScreen extends StatelessWidget {
   const UnknownRouteScreen({super.key, required this.location});
 
@@ -9,7 +11,10 @@ class UnknownRouteScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Cookbook')),
+      appBar: AppBar(
+        title: const Text('Cookbook'),
+        actions: const [ShareCurrentRouteButton()],
+      ),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(24),

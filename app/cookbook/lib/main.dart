@@ -79,8 +79,11 @@ class CookbookRoot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RepositoryProvider.value(
-      value: bookRepository,
+    return MultiRepositoryProvider(
+      providers: [
+        RepositoryProvider<AppConfig>.value(value: config),
+        RepositoryProvider<BookRepository>.value(value: bookRepository),
+      ],
       child: MultiBlocProvider(
         providers: [
           BlocProvider(

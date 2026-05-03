@@ -6,6 +6,7 @@ import '../bloc/book/book_event.dart';
 import '../bloc/book/book_state.dart';
 import '../widgets/common/loading_indicator.dart';
 import '../widgets/common/error_view.dart';
+import '../widgets/share/share_current_route_button.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -32,16 +33,29 @@ class _SplashScreenState extends State<SplashScreen> {
           }
         },
         builder: (context, state) {
-          return SafeArea(
-            child: Column(
-              children: [
-                const Spacer(),
-                _buildLogo(),
-                const Spacer(),
-                _buildContent(state),
-                const SizedBox(height: 48),
-              ],
-            ),
+          return Stack(
+            children: [
+              SafeArea(
+                child: Column(
+                  children: [
+                    const Spacer(),
+                    _buildLogo(),
+                    const Spacer(),
+                    _buildContent(state),
+                    const SizedBox(height: 48),
+                  ],
+                ),
+              ),
+              SafeArea(
+                child: Align(
+                  alignment: Alignment.topRight,
+                  child: ShareCurrentRouteButton(
+                    locationOverride: '/book',
+                    iconColor: Colors.white,
+                  ),
+                ),
+              ),
+            ],
           );
         },
       ),
