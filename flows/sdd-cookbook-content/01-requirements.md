@@ -31,6 +31,7 @@
 ## Ссылки
 
 - [02-specifications.md](./02-specifications.md) — основной каталог (в т.ч. §1.1 карта носителей, §7.4 инлайн-меры, §14 сканы ингредиентов Индии).
+- [../../data/assets/README.md](../../data/assets/README.md) — JSON-пакет по спекам (маппинг к `book.xml`).
 - `flows/vdd-cookbook-layout-cook/`
 - `flows/vdd-cookbook-layout-ingredients-replacement/`
 - `flows/vdd-cookbook-layout-cook/`, `flows/vdd-cookbook-layout-ingredients/` — хабы кухни и вкладка ингредиентов (визуальное соответствие спискам §13 в `02-specifications.md`)

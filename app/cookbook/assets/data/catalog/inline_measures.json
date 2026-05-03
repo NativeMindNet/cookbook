@@ -1,0 +1,59 @@
+{
+  "id": "measure.inline.catalog",
+  "entries": [
+    {
+      "id": "measure.inline.water_daily_glasses",
+      "sectionRefs": ["§6.2"],
+      "expression": "не меньше 8 стаканов воды",
+      "interpretation": {"count": 8, "unit": "glass"}
+    },
+    {
+      "id": "measure.inline.protein_mushroom_pct",
+      "sectionRefs": ["§6.3"],
+      "expression": "около 3% белка",
+      "interpretation": {"percent": 3, "context": "грибы"}
+    },
+    {
+      "id": "measure.inline.protein_grains_high_pct",
+      "sectionRefs": ["§6.3"],
+      "expression": "до 20% белка",
+      "interpretation": {"percent": 20, "context": "зёрна/семена"}
+    },
+    {
+      "id": "measure.inline.protein_fat_pumpkin_seed",
+      "sectionRefs": ["§6.3"],
+      "expression": "~20% белка, ~46% жира",
+      "interpretation": {"product": "семена тыквы", "proteinPercent": 20, "fatPercent": 46}
+    },
+    {
+      "id": "measure.inline.replacement_half_dose",
+      "sectionRefs": ["§10"],
+      "expression": "соевая паста в половинной дозе от грибного соуса",
+      "interpretation": {"ratio": 0.5, "reference": "грибной соус"}
+    },
+    {
+      "id": "measure.inline.curry_leaves_per_branch",
+      "sectionRefs": ["§14"],
+      "expression": "8–15 листочков на веточке",
+      "interpretation": {"rangeMin": 8, "rangeMax": 15, "unit": "leaf"}
+    },
+    {
+      "id": "measure.inline.coconut_thick_milk",
+      "sectionRefs": ["§14"],
+      "expression": "3 чашки тертой мякоти + 125 мл (0,5 чашки) воды",
+      "interpretation": {"volumeCups": 3, "volumeMl": 125, "cupFraction": 0.5}
+    },
+    {
+      "id": "measure.inline.coconut_thin_milk",
+      "sectionRefs": ["§14"],
+      "expression": "к трём чашкам мякоти + 625 мл воды",
+      "interpretation": {"volumeCups": 3, "volumeMl": 625}
+    },
+    {
+      "id": "measure.inline.asafoetida_pinch",
+      "sectionRefs": ["§14"],
+      "expression": "одной щепотки",
+      "interpretation": {"unit": "pinch", "amount": 1}
+    }
+  ]
+}

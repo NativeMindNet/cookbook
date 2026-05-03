@@ -336,11 +336,31 @@ Andre 3000, Kurt Cobain, Bob Marley, Chris Martin (Coldplay), Morrissey, Bryan A
 
 ---
 
+## 11a. Стратегия хранения данных
+
+Для обеспечения быстрого редактирования и надежной работы в приложении используется гибридная схема:
+
+1. **JSON файлы (`assets/data/*.json`)**: Первичный источник контента для разделов (замены, знаменитости, меры). Удобен для ручного наполнения и версионного контроля.
+2. **SQLite (migrations/seeds)**: Хранилище для быстрого поиска, закладок и сложных связей.
+3. **Первичный импорт**: При первом запуске (или при отсутствии файла БД) данные парсятся из JSON и `book.xml` и сохраняются в SQLite.
+
+### Схема папок
+- `assets/db/migrations/`: SQL-скрипты создания таблиц.
+- `assets/db/seeds/`: Минимальный набор данных (например, системные настройки).
+- `app/cookbook/assets/data/`: `book.xml` и JSON-каталоги.
+- **`data/assets` в корне репозитория** — симлинк на `app/cookbook/assets/data/catalog/` (удобный путь для SDD и скриптов: тот же каталог, что индексирует `catalog_index.json`).
+- `app/cookbook/assets/data/catalog/`: машиночитаемые пакеты (`main_menu.json`, `intro_toc.json`, `cuisine_*.json`, **`cuisine_hubs.json`** — свод §13, и др.).
+- **`app/cookbook/assets/data/catalog/`** — канонические JSON по этой спецификации; в корне репозитория **`data/assets`** — симлинк на `app/cookbook/assets/data/catalog` (удобно для `/data/assets`). Индекс: `catalog_index.json`.
+
+---
+
 ## 12. Связь с файлами проекта
 
 | Артефакт | Комментарий |
 |----------|-------------|
 | `app/cookbook/assets/data/book.xml` | Фактический контент страниц; строки §4–§11, §13 и **§14** (`ing.book.indian.*`) нужно **сопоставить** с номерами страниц/секций при миграции |
+| `app/cookbook/assets/data/catalog/cuisine_hubs.json` | Сводный JSON по **§13** (все кухни: вкладки, секции, пагинация, карточки); симлинк **`data/assets/cuisine_hubs.json`** в корне репозитория |
+| `data/assets/` (корень репозитория) | Симлинк на **`app/cookbook/assets/data/catalog/`**; индекс **`catalog_index.json`**, далее JSON по §2–§14 (обложка, меню, оглавление, меры, инлайн-меры, замены, знаменитые, диета, питательность, духовность, хабы кухонь, `indian_ingredient_articles.json`). Маппинг `content_id` → страница `book.xml` — отдельная задача. |
 | VDD `vdd-cookbook-layout-cook` | Визуальные шаблоны для тех же разделов |
 | VDD `vdd-cookbook-layout-ingredients` | Вкладка ингредиентов в хабе (списки §13.*.ingredients); визуальное описание разворотов §14 |
 | VDD `vdd-cookbook-layout-ingredients-replacement` | UX мастера для §10 |

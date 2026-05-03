@@ -1,0 +1,61 @@
+{
+  "id": "content.navigation_map",
+  "source": "flows/sdd-cookbook-content/02-specifications.md §1.1",
+  "rows": [
+    {
+      "carrier": "Скрин / макет обложки",
+      "specSection": "§2",
+      "entityKeys": ["screen.cover", "cover.title_primary", "cover.visual.hero_image"]
+    },
+    {
+      "carrier": "Скрин главного меню книги в приложении",
+      "specSection": "§3",
+      "entityKeys": ["nav.main_menu", "nav.introduction", "nav.ingredient_replacement", "nav.cuisine.indian", "nav.cuisine.chinese", "nav.cuisine.japanese", "nav.cuisine.thai"]
+    },
+    {
+      "carrier": "Макет оглавления введения",
+      "specSection": "§4",
+      "entityKeys": ["intro.toc", "intro.toc.figure"]
+    },
+    {
+      "carrier": "Разворот введение + диета + продукты",
+      "specSection": "§5",
+      "entityKeys": ["section.introduction.*", "NutrientCategory", "ProductGroup"]
+    },
+    {
+      "carrier": "Разворот питательность / клетчатка",
+      "specSection": "§6",
+      "entityKeys": ["nutrition.*", "measure.inline.water_daily_glasses"]
+    },
+    {
+      "carrier": "Экран меры ёмкостей",
+      "specSection": "§7",
+      "entityKeys": ["reference.measures", "MeasureVolumeRow", "MeasureGramRow", "measure.inline.*"]
+    },
+    {
+      "carrier": "Разворот духовность",
+      "specSection": "§8",
+      "entityKeys": ["spirituality.*"]
+    },
+    {
+      "carrier": "Экран знаменитые вегетарианцы",
+      "specSection": "§9",
+      "entityKeys": ["reference.famous_vegetarians"]
+    },
+    {
+      "carrier": "Экран замена ингредиентов",
+      "specSection": "§10",
+      "entityKeys": ["repl.*", "reference.ingredient_replacement"]
+    },
+    {
+      "carrier": "Скрины хабов региональных кухонь",
+      "specSection": "§13",
+      "entityKeys": ["cuisine.*", "CuisineTab", "ParchmentSectionTitle", "HubPagination"]
+    },
+    {
+      "carrier": "Сканы печатной книги: Индия → ИНГРЕДИЕНТЫ",
+      "specSection": "§14",
+      "entityKeys": ["ing.book.indian.*", "layout.book.indian_ingredients.*", "BookSpreadHeader"]
+    }
+  ]
+}

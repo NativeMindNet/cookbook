@@ -1,0 +1,89 @@
+{
+  "id": "book.xml.mapping.indian_ingredients",
+  "sourceXml": "app/cookbook/assets/data/book.xml",
+  "parentSectionTitle": "Ингридиенты Индийской кухни",
+  "note": "Страницы в основном фоновые; тексты статей в indian_ingredient_articles.json. Строки XML — ориентир для диффов.",
+  "pages": [
+    {
+      "bundleImage": "037.png",
+      "bookXmlLineApprox": 4674,
+      "sectionContentTitle": "Нутовая мука, тамаринд, листья бетеля, семена черного кунжута",
+      "layoutTemplate": "layout.book.indian_ingredients.spread_spine_quadrants",
+      "articles": [
+        "ing.book.indian.chickpea_flour",
+        "ing.book.indian.tamarind",
+        "ing.book.indian.betel_leaves",
+        "ing.book.indian.black_sesame"
+      ]
+    },
+    {
+      "bundleImage": "038.png",
+      "bookXmlLineApprox": 4685,
+      "sectionContentTitle": "Паста чили, стручки кардамона, зеленая папайя, семена горчицы",
+      "layoutTemplate": "layout.book.indian_ingredients.grid_2x2_cards",
+      "articles": [
+        "ing.book.indian.chili_paste",
+        "ing.book.indian.cardamom_pods",
+        "ing.book.indian.green_papaya",
+        "ing.book.indian.mustard_seeds"
+      ]
+    },
+    {
+      "bundleImage": "039.png",
+      "bookXmlLineApprox": 4696,
+      "sectionContentTitle": "Рисовая мука, семенеа тмина, гхи, семена фенхеля",
+      "layoutTemplate": "layout.book.indian_ingredients.grid_2x2_framed",
+      "articles": [
+        "ing.book.indian.rice_flour",
+        "ing.book.indian.cumin_seeds",
+        "ing.book.indian.ghee",
+        "ing.book.indian.fennel_seeds"
+      ]
+    },
+    {
+      "bundleImage": "040.png",
+      "bookXmlLineApprox": 4707,
+      "sectionContentTitle": "Куркума, кориандр, асафетида, гарам масала",
+      "layoutTemplate": "layout.book.indian_ingredients.grid_2x2_header_contrast",
+      "articles": [
+        "ing.book.indian.turmeric",
+        "ing.book.indian.coriander",
+        "ing.book.indian.asafoetida",
+        "ing.book.indian.garam_masala"
+      ]
+    },
+    {
+      "bundleImage": "041.png",
+      "bookXmlLineApprox": 4718,
+      "sectionContentTitle": "Басмати, перец стручковой (чили), листья дерева карри",
+      "layoutTemplate": "layout.book.indian_ingredients.two_columns_split_left",
+      "articles": [
+        "ing.book.indian.basmati",
+        "ing.book.indian.curry_leaves",
+        "ing.book.indian.chili_pod"
+      ]
+    },
+    {
+      "bundleImage": "042.png",
+      "bookXmlLineApprox": 4729,
+      "sectionContentTitle": "Дал, кокосовое молоко",
+      "layoutTemplate": "layout.book.indian_ingredients.two_tall_columns",
+      "articles": ["ing.book.indian.dal", "ing.book.indian.coconut_milk"]
+    },
+    {
+      "bundleImage": "043.png",
+      "bookXmlLineApprox": 4740,
+      "sectionContentTitle": "Панир (домашний сыр)",
+      "layoutTemplate": "layout.book.indian_ingredients.stub",
+      "articles": ["ing.book.indian.paneer"]
+    },
+    {
+      "bundleImage": "044.png",
+      "bookXmlLineApprox": 4751,
+      "sectionContentTitle": "Мятное чатни, томатное чатни",
+      "layoutTemplate": "layout.book.indian_ingredients.stub",
+      "articles": ["ing.book.indian.mint_chutney", "ing.book.indian.tomato_chutney"],
+      "note": "Порядок статей на развороте — сверить по визуалу страницы"
+    }
+  ]
+}

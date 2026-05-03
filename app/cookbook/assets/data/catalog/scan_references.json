@@ -1,0 +1,37 @@
+{
+  "id": "scan.references.indian_ingredients",
+  "source": "flows/sdd-cookbook-content/02-specifications.md §14.1",
+  "note": "UUID-имена вне репозитория; в приложении используются 037.png–044.png из бандла.",
+  "scans": [
+    {
+      "logicalId": "scan.indian.ingredients.037",
+      "cursorAssetName": "037-afc687c2-2dff-4ad8-887f-8f511a2e65ed.png",
+      "appBundleFile": "037.png"
+    },
+    {
+      "logicalId": "scan.indian.ingredients.038",
+      "cursorAssetName": "038-bca82405-7f79-47c4-bc72-6bb4dfb02b52.png",
+      "appBundleFile": "038.png"
+    },
+    {
+      "logicalId": "scan.indian.ingredients.039",
+      "cursorAssetName": "039-2e1b0c79-88ef-4d2c-b7c0-f3c4657ea675.png",
+      "appBundleFile": "039.png"
+    },
+    {
+      "logicalId": "scan.indian.ingredients.040",
+      "cursorAssetName": "040-1bb25814-3ef6-4375-af2b-d06851dd1927.png",
+      "appBundleFile": "040.png"
+    },
+    {
+      "logicalId": "scan.indian.ingredients.041",
+      "cursorAssetName": "041-3e8ad22e-20ea-4c15-9dcd-98194bdafc8d.png",
+      "appBundleFile": "041.png"
+    },
+    {
+      "logicalId": "scan.indian.ingredients.042",
+      "cursorAssetName": "042-095d5ef3-77b5-4486-8723-0c431427e50b.png",
+      "appBundleFile": "042.png"
+    }
+  ]
+}

@@ -1,0 +1,1705 @@
+{
+  "schemaVersion": 1,
+  "specRef": "flows/sdd-cookbook-content/02-specifications.md §13",
+  "seriesHeader": "Вегетарианская кухня Востока",
+  "cuisines": [
+    {
+      "id": "indian",
+      "bannerTitle": "Индийская кухня",
+      "bannerColorKey": "red",
+      "tabLayout": "single_row",
+      "tabs": [
+        {
+          "id": "main",
+          "label": "Основные"
+        },
+        {
+          "id": "snacks",
+          "label": "Закуски"
+        },
+        {
+          "id": "salads",
+          "label": "Салаты"
+        },
+        {
+          "id": "curry",
+          "label": "Карри"
+        },
+        {
+          "id": "soups",
+          "label": "Супы"
+        },
+        {
+          "id": "ingredients",
+          "label": "Ингредиенты"
+        }
+      ],
+      "cataloguedScreens": [
+        {
+          "id": "indian.ingredients",
+          "tabId": "ingredients",
+          "pagination": null,
+          "sections": [
+            {
+              "title": "ИНГРЕДИЕНТЫ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Нутовая мука",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Тамаринд",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Листья бетеля",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Семена черного кунжута",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Паста чили",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Стручки кардамона",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 7,
+                  "name": "Зеленая папайя",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 8,
+                  "name": "Семена горчицы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 9,
+                  "name": "Рисовая мука",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 10,
+                  "name": "Семена тмина",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 11,
+                  "name": "Гхи",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 12,
+                  "name": "Кокосовое молоко",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 13,
+                  "name": "Куркума",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 14,
+                  "name": "Кориандр",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 15,
+                  "name": "Асафетида",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 16,
+                  "name": "Гарам масала",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 17,
+                  "name": "Басмати",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 18,
+                  "name": "Листья дерева карри",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 19,
+                  "name": "Перец стручковый (чили)",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 20,
+                  "name": "Дал",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 21,
+                  "name": "Семена фенхеля",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 22,
+                  "name": "Панир (домашний сыр)",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 23,
+                  "name": "Томатное чатни",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 24,
+                  "name": "Мятное чатни",
+                  "cardKind": "grid"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chinese",
+      "bannerTitle": "Китайская кухня",
+      "bannerColorKey": "blue",
+      "tabLayout": "single_row",
+      "tabs": [
+        {
+          "id": "main",
+          "label": "Основные"
+        },
+        {
+          "id": "salads",
+          "label": "Салаты"
+        },
+        {
+          "id": "soups",
+          "label": "Супы"
+        },
+        {
+          "id": "snacks",
+          "label": "Закуски"
+        },
+        {
+          "id": "desserts",
+          "label": "Десерты"
+        },
+        {
+          "id": "ingredients",
+          "label": "Ингредиенты"
+        }
+      ],
+      "cataloguedScreens": [
+        {
+          "id": "chinese.main",
+          "tabId": "main",
+          "pagination": null,
+          "sections": [
+            {
+              "title": "ОСНОВНЫЕ БЛЮДА",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Вегетарианские рулеты из тофу",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Тофу с черными грибами",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Закуски из тофу и овощей",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Хрустящие чипсы из тофу",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Острый тофу с арахисом",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Острый шпинат с листами тофу",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 7,
+                  "name": "Сычуаньский тофу ма по",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 8,
+                  "name": "Глиняный горшок тофу с овощами",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 9,
+                  "name": "Водяной батат с бобовым соусом",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 10,
+                  "name": "Китайский патиссон с соусом",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 11,
+                  "name": "Жареные овощи с черными грибами",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 12,
+                  "name": "Жареная смесь овощей",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 13,
+                  "name": "Жареные бобы с ростками и чили",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 14,
+                  "name": "Томаты с жареными кедровыми орехами",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 15,
+                  "name": "Тушеный бок чой",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 16,
+                  "name": "Гадо гадо",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 17,
+                  "name": "Ячменный плов",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 18,
+                  "name": "Овощной донбури",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 19,
+                  "name": "Обжаренный коричневый рис",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 20,
+                  "name": "Китайский рис и соевые бобы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 21,
+                  "name": "Сэндвич с кунжутным паштетом",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 22,
+                  "name": "Сладкий суп из зеленой чечевицы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 23,
+                  "name": "Суп из тыквы и семян лотоса",
+                  "cardKind": "grid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chinese.composite_zakuski_salaty_supy_deserty",
+          "tabId": null,
+          "note": "Составной пергамент (SDD §13.2)",
+          "pagination": null,
+          "sections": [
+            {
+              "title": "ЗАКУСКИ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Салат из китайских баклажанов",
+                  "cardKind": "grid"
+                }
+              ]
+            },
+            {
+              "title": "САЛАТЫ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Салат из острой окры",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Салат из корня лотоса и овощей",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Салат из колокольчатого перца и тыквы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Успокаивающий целебный суп",
+                  "cardKind": "grid"
+                }
+              ]
+            },
+            {
+              "title": "СУПЫ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Суп из шпината, грибов и тофу",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Суп из тигровых лилий и фиников",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Суп из лапши и овощей",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Суп из лапши",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Вегетарианский жареный бихун",
+                  "cardKind": "grid"
+                }
+              ]
+            },
+            {
+              "title": "ДЕСЕРТЫ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Лапша с чили и кунжутным соусом",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Лапша с кунжутом и чесноком",
+                  "cardKind": "grid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chinese.ingredients",
+          "tabId": "ingredients",
+          "pagination": null,
+          "sections": [
+            {
+              "title": "ИНГРЕДИЕНТЫ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Побеги бамбука",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Кунжутное масло",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Паста из черных бобов",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Черные китайские грибы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Вегетарианский устричный соус",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Рисовое вино",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 7,
+                  "name": "Черный китайский уксус",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 8,
+                  "name": "Перец сычуан",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 9,
+                  "name": "Порошок из соли и перца сычуан",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 10,
+                  "name": "Белые грибы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 11,
+                  "name": "Кунжутная паста",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 12,
+                  "name": "Бобовый соус",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 13,
+                  "name": "Древесные уховидные белые грибы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 14,
+                  "name": "Бок чой",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 15,
+                  "name": "Китайское рисовое вино",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 16,
+                  "name": "Сухая рисовая вермишель",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 17,
+                  "name": "Обертки го джи",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 18,
+                  "name": "Латтук татсои",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 19,
+                  "name": "Тамари",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 20,
+                  "name": "Тамаринд",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 21,
+                  "name": "Тофу",
+                  "cardKind": "grid"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "japanese",
+      "bannerTitle": "Японская кухня",
+      "bannerColorKey": "gray",
+      "tabLayout": "single_row",
+      "tabs": [
+        {
+          "id": "main",
+          "label": "Основные блюда"
+        },
+        {
+          "id": "sauces",
+          "label": "Соусы"
+        },
+        {
+          "id": "ingredients",
+          "label": "Ингредиенты"
+        }
+      ],
+      "cataloguedScreens": [
+        {
+          "id": "japanese.main_with_sauces",
+          "tabId": "main",
+          "pagination": null,
+          "sections": [
+            {
+              "title": "ОСНОВНЫЕ БЛЮДА",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Суши",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Суп из мисо и лапши удон",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Конусы из нори",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Тофу агедаши",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Баклажаны гриль с мисо",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Грибы, обернутые водорослями",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 7,
+                  "name": "Овощные пирожки темпура",
+                  "cardKind": "grid"
+                }
+              ]
+            },
+            {
+              "title": "СОУСЫ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Соус сакэ",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Устричный чили соус",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Японская заправка",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Соус хоисин",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Соус из черных бобов",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Имбирный устричный соус",
+                  "cardKind": "grid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "japanese.ingredients",
+          "tabId": "ingredients",
+          "pagination": null,
+          "sections": [
+            {
+              "title": "ИНГРЕДИЕНТЫ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Маринованный имбирь",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Сухие листья бамбука",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Клейкий рис",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Конбу",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Японский соевый соус",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Рисовый уксус",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 7,
+                  "name": "Сакэ",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 8,
+                  "name": "Листы нори",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 9,
+                  "name": "Грибы шиитаке",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 10,
+                  "name": "Лапша соба",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 11,
+                  "name": "Обертки для весенних роллов",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 12,
+                  "name": "Вакаме",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 13,
+                  "name": "Паста васаби",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 14,
+                  "name": "Белый мисо",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 15,
+                  "name": "Бамбуковая подстилка",
+                  "cardKind": "grid"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thai",
+      "bannerTitle": "Тайская кухня",
+      "bannerColorKey": "green",
+      "tabLayout": "two_rows",
+      "tabRows": [
+        {
+          "row": 0,
+          "tabs": [
+            {
+              "id": "sauces_pastes",
+              "label": "Соусы и пасты"
+            },
+            {
+              "id": "salads",
+              "label": "Салаты"
+            },
+            {
+              "id": "snacks",
+              "label": "Закуски"
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "tabs": [
+            {
+              "id": "main",
+              "label": "Основные"
+            },
+            {
+              "id": "curry",
+              "label": "Карри"
+            },
+            {
+              "id": "soups",
+              "label": "Супы"
+            },
+            {
+              "id": "drinks",
+              "label": "Напитки"
+            },
+            {
+              "id": "desserts",
+              "label": "Десерты"
+            },
+            {
+              "id": "ingredients",
+              "label": "Ингредиенты"
+            }
+          ]
+        }
+      ],
+      "cataloguedScreens": [
+        {
+          "id": "thai.sauces_pastes_and_salads",
+          "tabId": "sauces_pastes",
+          "pagination": null,
+          "sections": [
+            {
+              "title": "СОУСЫ И ПАСТЫ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Арахисовый соус",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Паста из чили том ям",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Паста из красного или зеленого чили",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Сладкий соус чили",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Паста из зеленого чили и тамаринда",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Паста из чили в северном стиле",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 7,
+                  "name": "Острый соус из золотистой фасоли",
+                  "cardKind": "grid"
+                }
+              ]
+            },
+            {
+              "title": "САЛАТЫ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Тайский салат из зеленой папайи",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Острый салат со стеклянной лапшой",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Овощной салат с арахисовым соусом",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Кисло-сладкий салат из моркови",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Салат из баклажанов",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Салат из лапши соба",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 7,
+                  "name": "Салат из папайи (Сом там)",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 8,
+                  "name": "Салат из тыквы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 9,
+                  "name": "Фруктовый салат (пхонламаи)",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 10,
+                  "name": "Острый салат из манго и грибов",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 11,
+                  "name": "Очень острый салат",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 12,
+                  "name": "Острый грибной салат",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 13,
+                  "name": "Острый салат из овощей",
+                  "cardKind": "grid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "thai.main.page1",
+          "tabId": "main",
+          "pagination": {
+            "pageIndex": 1,
+            "pageCount": 3
+          },
+          "sections": [
+            {
+              "title": "ОСНОВНЫЕ БЛЮДА",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Сухой соевый белок",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Стеклянная лапша",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Коричневый рис с фрикадельками",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Каша из цветного риса",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Ананас с жареным рисом",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Вегетарианский жареный рис",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 7,
+                  "name": "Рис с бобовым творогом",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 8,
+                  "name": "Жареный рис",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 9,
+                  "name": "Рулеты из рисовой лапши",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 10,
+                  "name": "Жареная лапша с фасолью",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 11,
+                  "name": "Жареная лапша ми-суа",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 12,
+                  "name": "Острая жареная лапша",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 13,
+                  "name": "Жареные макароны",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 14,
+                  "name": "Клейкий рис с орехами и грибами",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 15,
+                  "name": "Рис, сваренный в кокосовом молоке",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 16,
+                  "name": "Лапша из золотистой фасоли",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 17,
+                  "name": "Фаршированная горькая тыква",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 18,
+                  "name": "Тушеные овощи",
+                  "cardKind": "grid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "thai.main.page2",
+          "tabId": "main",
+          "pagination": {
+            "pageIndex": 2,
+            "pageCount": 3
+          },
+          "sections": [
+            {
+              "title": "ОСНОВНЫЕ БЛЮДА",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Жареный бобовый творог",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Бобовый творог на пару",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Соевые бобы в кокосовых сливках",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Бобовый творог с ананасом",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Бобовый творог в густом карри",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Сладко-кислые жареные овощи",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 7,
+                  "name": "Жареные ангельские грибы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 8,
+                  "name": "Острая жареная мини-кукуруза",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 9,
+                  "name": "Бобовый творог с овощами",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 10,
+                  "name": "Грибы с чили и базиликом",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 11,
+                  "name": "Жареная кукуруза, чили и базилик",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 12,
+                  "name": "Жареный перец и фасоль",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 13,
+                  "name": "Бобовый творог с овощами",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 14,
+                  "name": "Жареные овощи с фасолью",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 15,
+                  "name": "Жареные овощи и бобовый творог",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 16,
+                  "name": "Овощи с фасолью и кунжутом",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 17,
+                  "name": "Грибы шиитаке с лапшой",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 18,
+                  "name": "Жареные овощи",
+                  "cardKind": "grid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "thai.main.page3",
+          "tabId": "main",
+          "pagination": {
+            "pageIndex": 3,
+            "pageCount": 3
+          },
+          "sections": [
+            {
+              "title": "ОСНОВНЫЕ БЛЮДА",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Овощи исаан",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Хумус из тыквы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Темпура из тофу",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Тайская лапша тай пэд",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Рисовая мозаика",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Овощи с острым базиликом",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 7,
+                  "name": "Жареное тофу с имбирем",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 8,
+                  "name": "Жареные бобы с тофу",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 9,
+                  "name": "Тофу, вареное на пару с соей",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 10,
+                  "name": "Тофу с острым гарниром чили",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 11,
+                  "name": "Лакса",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 12,
+                  "name": "Тайский темпе",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 13,
+                  "name": "Жареный карамельный темпе",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 14,
+                  "name": "Грибы с красным соусом карри",
+                  "cardKind": "grid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "thai.curry",
+          "tabId": "curry",
+          "pagination": null,
+          "sections": [
+            {
+              "title": "КАРРИ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Тайско-индонезийское карри",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Желтое карри с жареным рисом",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Тайско-индийское карри",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Красное тайское карри",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Зеленое тайское карри",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Желтое карри из тыквы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 7,
+                  "name": "Зеленое карри из бобового творога",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 8,
+                  "name": "Ананасовый карри",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 9,
+                  "name": "Карри массанам",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 10,
+                  "name": "Острое карри из бобового творога",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 11,
+                  "name": "Красное карри из бобового творога",
+                  "cardKind": "grid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "thai.soups",
+          "tabId": "soups",
+          "pagination": {
+            "pageIndex": 3,
+            "pageCount": 3
+          },
+          "sections": [
+            {
+              "title": "СУПЫ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Травяной крем-суп",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Кукурузный крем-суп",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Суп с перловой крупой и фасолью",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Вон тон в соевом молоке",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Овощной суп (суп пхак)",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Грибной суп с имбирем",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 7,
+                  "name": "Кокосовый крем-суп",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 8,
+                  "name": "Кисло-острый грибной суп",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 9,
+                  "name": "Летний овощной суп",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 10,
+                  "name": "Суп из китайской капусты и грибов",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 11,
+                  "name": "Острокислый суп (Суп том ям)",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 12,
+                  "name": "Суп том ка",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 13,
+                  "name": "Острокислый суп из зеленого арбуза",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 14,
+                  "name": "Суп из морских водорослей",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 15,
+                  "name": "Рисовый суп кау том",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 16,
+                  "name": "Суп из тыквы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 17,
+                  "name": "Овощной суп с лапшой",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 18,
+                  "name": "Суп из горькой тыквы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 19,
+                  "name": "Суп из кукурузы и грибов",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 20,
+                  "name": "Овощная солянка (Джап чхаи)",
+                  "cardKind": "grid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "thai.snacks",
+          "tabId": "snacks",
+          "pagination": null,
+          "sections": [
+            {
+              "title": "ЗАКУСКИ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Острая добавка к рису",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Обжаренный бобовый творог",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Тао-ху барбекю (сатех)",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Жареные канапе с грибным паштетом",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Хрустящие жареные овощи",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Жареные рулетики",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 7,
+                  "name": "Грибные чипсы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 8,
+                  "name": "Хрустящие листья базилика",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 9,
+                  "name": "Фаршированные блинчики",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 10,
+                  "name": "Жареные блинчики",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 11,
+                  "name": "Роллы в рисовой бумаге",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 12,
+                  "name": "Тайские весенние мини-роллы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 13,
+                  "name": "Острые жареные орехи кешью",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 14,
+                  "name": "Сэндвич с тофу",
+                  "cardKind": "grid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "thai.drinks_desserts",
+          "tabId": "drinks",
+          "note": "НАПИТКИ + ДЕСЕРТЫ на одном пергаменте (SDD §13.4.8)",
+          "pagination": null,
+          "sections": [
+            {
+              "title": "НАПИТКИ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Тайский чай с лаймом",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Чай с кокосовым молоком",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Тайский кофе",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Коктейль из папайи",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Манго коктейль",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Банановый коктейль",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 7,
+                  "name": "Фруктовый коктейль ассорти",
+                  "cardKind": "grid"
+                }
+              ]
+            },
+            {
+              "title": "ДЕСЕРТЫ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Черный рис с манго и бананом",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Тыква в кокосовом молоке",
+                  "cardKind": "grid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "thai.ingredients.page1",
+          "tabId": "ingredients",
+          "pagination": {
+            "pageIndex": 1,
+            "pageCount": 2
+          },
+          "sections": [
+            {
+              "title": "ИНГРЕДИЕНТЫ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Рис, кхао джао",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Клейкий рис",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Пальмовый сахар",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Бобовый творог",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Ферментированные соевые бобы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Соевая паста",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 7,
+                  "name": "Соевый соус",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 8,
+                  "name": "Фасоль",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 9,
+                  "name": "Темный соевый соус",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 10,
+                  "name": "Золотистая фасоль",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 11,
+                  "name": "Чили",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 12,
+                  "name": "Паста чили",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 13,
+                  "name": "Кокос",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 14,
+                  "name": "Кокосовые сливки",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 15,
+                  "name": "Чеснок",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 16,
+                  "name": "Шалот",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 17,
+                  "name": "Спаржевые бобы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 18,
+                  "name": "Кафрский лайм",
+                  "cardKind": "grid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "thai.ingredients.page2",
+          "tabId": "ingredients",
+          "pagination": {
+            "pageIndex": 2,
+            "pageCount": 2
+          },
+          "sections": [
+            {
+              "title": "ИНГРЕДИЕНТЫ",
+              "items": [
+                {
+                  "order": 1,
+                  "name": "Грибы",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 2,
+                  "name": "Грибы-уши (уховидные грибы)",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 3,
+                  "name": "Грибы шиитаке",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 4,
+                  "name": "Обёртки вон тон",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 5,
+                  "name": "Тамаринд",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 6,
+                  "name": "Темпе",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 7,
+                  "name": "Листья тайского базилика",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 8,
+                  "name": "Паста том йум",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 9,
+                  "name": "Листья пандана",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 10,
+                  "name": "Кориандр",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 11,
+                  "name": "Папайя",
+                  "cardKind": "grid"
+                },
+                {
+                  "order": 12,
+                  "name": "Ма-кхеуа пхуанг",
+                  "cardKind": "grid"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

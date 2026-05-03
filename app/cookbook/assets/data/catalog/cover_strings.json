@@ -1,0 +1,14 @@
+{
+  "id": "screen.cover",
+  "strings": {
+    "cover.title_primary": "вегетарианская кухня востока",
+    "cover.title_block": "РЕЦЕПТЫ БЛЮД",
+    "cover.title_block_2": "ИНДИЙСКОЙ, КИТАЙСКОЙ,",
+    "cover.title_block_3": "ЯПОНСКОЙ И ТАЙСКОЙ КУХНИ",
+    "cover.brand": "ethno app.com"
+  },
+  "visualRoles": [
+    "cover.visual.frame",
+    "cover.visual.hero_image"
+  ]
+}

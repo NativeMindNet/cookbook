@@ -1,44 +1,61 @@
--- Initial database schema for Cookbook
+-- Cookbook Database Schema v1.1
+-- Optimized for typed data access
 
--- Book Sections (Introduction, Chapters, etc.)
+-- 1. Navigation & Structure
 CREATE TABLE IF NOT EXISTS sections (
     id TEXT PRIMARY KEY,
-    title TEXT,
+    title TEXT NOT NULL,
     start_page INTEGER,
     parent_id TEXT,
     sort_order INTEGER,
     FOREIGN KEY (parent_id) REFERENCES sections(id)
 );
 
--- Recipes and Ingredients from hubs
+-- 2. Recipes (The Core Catalog)
 CREATE TABLE IF NOT EXISTS recipes (
-    id TEXT PRIMARY KEY,
-    title TEXT,
-    cuisine TEXT,
-    category TEXT, -- 'main', 'salad', 'soup', 'dessert', 'ingredient'
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    cuisine TEXT NOT NULL, -- 'indian', 'chinese', 'japanese', 'thai'
+    category TEXT NOT NULL, -- 'main', 'salad', 'soup', 'dessert', 'curry', 'snack', 'sauce', 'drink', 'ingredient'
+    ingredients TEXT, -- CSV or descriptive string
+    cooking_time TEXT,
     page_number INTEGER
 );
 
--- Ingredient Replacements
+-- 3. Ingredient Replacements
 CREATE TABLE IF NOT EXISTS ingredient_replacements (
     id TEXT PRIMARY KEY,
     ingredient_name TEXT NOT NULL,
     replacement_text TEXT NOT NULL,
-    context TEXT -- e.g., 'Thai cuisine'
+    context TEXT,
+    description TEXT,
+    disclaimer TEXT
 );
 
--- Generic content for lists like 'Famous Vegetarians' or 'Measures'
-CREATE TABLE IF NOT EXISTS content_entries (
-    id TEXT PRIMARY KEY,
-    type TEXT NOT NULL, -- 'famous_vegetarian', 'measure'
-    category TEXT, -- e.g., 'Thinkers', 'Volume'
-    title TEXT NOT NULL,
-    subtitle TEXT,
-    value TEXT, -- used for measures (e.g., '250 ml')
+-- 4. Famous Vegetarians
+CREATE TABLE IF NOT EXISTS famous_vegetarians (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    category TEXT NOT NULL,
+    name TEXT NOT NULL,
     sort_order INTEGER
 );
 
--- User bookmarks
+-- 5. Measures & Conversion
+CREATE TABLE IF NOT EXISTS measures_volumes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    unit TEXT NOT NULL,
+    value TEXT NOT NULL,
+    sort_order INTEGER
+);
+
+CREATE TABLE IF NOT EXISTS measures_products (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    weight TEXT NOT NULL,
+    sort_order INTEGER
+);
+
+-- 6. User Data
 CREATE TABLE IF NOT EXISTS bookmarks (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     page_number INTEGER NOT NULL,

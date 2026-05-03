@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "sourceSpec": "flows/sdd-cookbook-content/02-specifications.md",
+  "locale": "ru",
+  "bundles": [
+    {"id": "cover_strings", "file": "cover_strings.json", "entity": "screen.cover"},
+    {"id": "main_menu", "file": "main_menu.json", "entity": "nav.main_menu"},
+    {"id": "intro_toc", "file": "intro_toc.json", "entity": "intro.toc"},
+    {"id": "measures", "file": "measures.json", "entity": "reference.measures"},
+    {"id": "inline_measures", "file": "inline_measures.json", "entity": "measure.inline.*"},
+    {"id": "ingredient_replacements", "file": "ingredient_replacements.json", "entity": "reference.ingredient_replacement"},
+    {"id": "famous_vegetarians", "file": "famous_vegetarians.json", "entity": "reference.famous_vegetarians"},
+    {"id": "diet_intro", "file": "diet_intro.json", "entity": "spread.intro_diet_products"},
+    {"id": "nutrition_blocks", "file": "nutrition_blocks.json", "entity": "spread.nutrition_fiber"},
+    {"id": "spirituality", "file": "spirituality.json", "entity": "spread.spirituality"},
+    {"id": "cuisine_indian", "file": "cuisine_indian.json", "entity": "cuisine.indian"},
+    {"id": "cuisine_chinese", "file": "cuisine_chinese.json", "entity": "cuisine.chinese"},
+    {"id": "chinese_recipes", "file": "chinese_recipes.json", "entity": "recipe.book.chinese.*"},
+    {"id": "cuisine_japanese", "file": "cuisine_japanese.json", "entity": "cuisine.japanese"},
+    {"id": "cuisine_thai", "file": "cuisine_thai.json", "entity": "cuisine.thai"},
+    {"id": "cuisine_hubs", "file": "cuisine_hubs.json", "entity": "cuisine.*"},
+    {"id": "indian_ingredient_articles", "file": "indian_ingredient_articles.json", "entity": "ing.book.indian.*"},
+    {"id": "content_navigation_map", "file": "content_navigation_map.json", "entity": "content.navigation_map"},
+    {"id": "nav_main_menu", "file": "nav_main_menu.json", "entity": "nav.main_menu"},
+    {"id": "book_xml_mapping_indian_ingredients", "file": "book_xml_mapping_indian_ingredients.json", "entity": "book.xml.mapping.ingredients"},
+    {"id": "scan_references", "file": "scan_references.json", "entity": "scan.references"},
+    {"id": "indian_main_recipes", "file": "indian_main_recipes.json", "entity": "recipe.book.indian.*"},
+    {"id": "book_xml_mapping_indian_mains", "file": "book_xml_mapping_indian_mains.json", "entity": "book.xml.mapping.recipes"}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "nav.main_menu",
+  "screenTitle": "Вегетарианская кухня Востока",
+  "items": [
+    {"id": "nav.introduction", "title": "Введение", "row": "scrolls"},
+    {"id": "nav.ingredient_replacement", "title": "Замена ингредиентов", "row": "scrolls"},
+    {"id": "nav.cuisine.indian", "title": "Индийская кухня", "row": "cards", "bannerHue": "maroon"},
+    {"id": "nav.cuisine.chinese", "title": "Китайская кухня", "row": "cards", "bannerHue": "blue"},
+    {"id": "nav.cuisine.japanese", "title": "Японская кухня", "row": "cards", "bannerHue": "grey"},
+    {"id": "nav.cuisine.thai", "title": "Тайская кухня", "row": "cards", "bannerHue": "olive"}
+  ]
+}

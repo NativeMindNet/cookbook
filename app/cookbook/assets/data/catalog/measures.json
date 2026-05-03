@@ -1,0 +1,29 @@
+{
+  "id": "reference.measures",
+  "title": "МЕРЫ ЕМКОСТЕЙ",
+  "volumeRows": [
+    {"cupLabel": "1/4 стакана", "ml": 60},
+    {"cupLabel": "1/2 стакана", "ml": 125},
+    {"cupLabel": "1 стакан", "ml": 250},
+    {"cupLabel": "2 стакана", "ml": 500},
+    {"cupLabel": "4 стакана", "l": 1}
+  ],
+  "gramRows": [
+    {"product": "Жареный арахис", "grams": 150},
+    {"product": "Тёртый кокос", "grams": 100},
+    {"product": "Сырой рис", "grams": 200},
+    {"product": "Мякоть тамаринда (tamarind pulp)", "grams": 300},
+    {"product": "Зелёный горошек", "grams": 150},
+    {"product": "Пшеничная мука", "grams": 150},
+    {"product": "Сахар (кристаллический)", "grams": 125},
+    {"product": "Сырой бурый рис", "grams": 220},
+    {"product": "Свежая кинза (листья)", "grams": 50},
+    {"product": "Ростки фасоли (bean sprouts)", "grams": 50},
+    {"product": "Сухая соя", "grams": 200},
+    {"product": "Кукурузная мука (corn flour)", "grams": 120}
+  ],
+  "figureDescriptions": [
+    "Корзина со свежей зеленью и стручками красного чили на плетёном фоне",
+    "Металлические чаши с соусами/супами на красно-оранжевой ткани"
+  ]
+}

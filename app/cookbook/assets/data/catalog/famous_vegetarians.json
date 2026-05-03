@@ -1,0 +1,51 @@
+{
+  "id": "reference.famous_vegetarians",
+  "title": "ЗНАМЕНИТЫЕ ВЕГЕТАРИАНЦЫ",
+  "introSummary": "Многие известные и одарённые люди выбирали вегетарианство по этическим и духовным причинам.",
+  "categories": [
+    {
+      "id": "thinkers_writers",
+      "title": "Мыслители и писатели",
+      "names": [
+        "Пифагор",
+        "Сократ",
+        "Платон",
+        "Леонардо да Винчи",
+        "Лев Толстой",
+        "Франц Кафка",
+        "Альберт Эйнштейн"
+      ],
+      "incompleteFromReference": true,
+      "note": "На макете перечень длиннее одной строки — полный состав по OCR полной страницы книги."
+    },
+    {
+      "id": "public_figures",
+      "title": "Общественные деятели",
+      "names": [
+        "Бенджамин Франклин",
+        "Янез Дрновшек",
+        "Деннис Кучинич",
+        "Махатма Ганди",
+        "Ральф Нейдер",
+        "Рашид Нургалиев"
+      ],
+      "incompleteFromReference": true
+    },
+    {
+      "id": "musicians",
+      "title": "Музыканты и композиторы",
+      "names": [
+        "Andre 3000",
+        "Kurt Cobain",
+        "Bob Marley",
+        "Chris Martin (Coldplay)",
+        "Morrissey",
+        "Bryan Adams",
+        "Victoria Beckham",
+        "Bob Dylan"
+      ],
+      "incompleteFromReference": true
+    }
+  ],
+  "ui": {"rowStyle": "zebra"}
+}
