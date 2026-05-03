@@ -37,7 +37,7 @@ IngredientListItem {
 
 Классика: **шад рasa** (шесть вкусов) и **даша гуна** в разрезе **десяти пар** (двадцать полюсов) — стандартная таксономия качеств вещества/пищи (Чарака и др.). Идентификаторы в `snake_case`, стабильные для миграций и JSON.
 
-### DDL (новая миграция; в `001_init.sql` пока нет)
+### DDL (реализация: `001_init.sql`, апгрейд с v1: `002_upgrade_to_v2.sql`)
 
 ```sql
 -- Вкус: шад рasa + расширения приложения (не часть классической шестёрки)
@@ -55,6 +55,13 @@ CREATE TABLE IF NOT EXISTS ref_guna (
   pair_code TEXT NOT NULL,
   pole TEXT NOT NULL, -- 'a' | 'b' — два полюса одной пары
   sanskrit TEXT NOT NULL,
+  name_ru TEXT NOT NULL,
+  sort_order INTEGER NOT NULL
+);
+
+-- Органолептика во рту (отдельно от гун)
+CREATE TABLE IF NOT EXISTS ref_mouthfeel (
+  id TEXT PRIMARY KEY,
   name_ru TEXT NOT NULL,
   sort_order INTEGER NOT NULL
 );
@@ -125,9 +132,9 @@ INSERT INTO ref_guna (id, pair_code, pole, sanskrit, name_ru, sort_order) VALUES
   ('guna_sara',     'pair_sthira_sara',      'b', 'सर', 'подвижный, текучий (сара)', 20);
 ```
 
-### Органолептика во рту (не гуны классики)
+### Seed: `ref_mouthfeel` — органолептика во рту (не гуны классики)
 
-Хрустящая, нежная, **упругая** (пример: вегетарианская селедка / сыр «косичка») и т. п. из визуала — отдельный справочник `ref_mouthfeel` (отдельная миграция), чтобы не смешивать с `ref_guna`. При необходимости связь `ingredient_mouthfeel`.
+Справочник в `001_seed.sql` / `002_upgrade_to_v2.sql`: хрустящая, нежная, слизистая, пористая, плотная, тающая, хлопьястая, жидкая, густая, упругая. Связь с ингредиентом — позже (`ingredient_mouthfeel`).
 
 ### Правила использования в seed контента
 

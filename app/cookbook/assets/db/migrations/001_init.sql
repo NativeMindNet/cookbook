@@ -1,4 +1,4 @@
--- Cookbook Database Schema v1.1
+-- Cookbook Database Schema v1.2
 -- Optimized for typed data access
 
 -- 1. Navigation & Structure
@@ -61,4 +61,30 @@ CREATE TABLE IF NOT EXISTS bookmarks (
     page_number INTEGER NOT NULL,
     title TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 7. Ingredient taxonomy: Ayurvedic rasa + app extensions
+CREATE TABLE IF NOT EXISTS ref_taste (
+    id TEXT PRIMARY KEY,
+    kind TEXT NOT NULL,
+    sanskrit TEXT,
+    name_ru TEXT NOT NULL,
+    sort_order INTEGER NOT NULL
+);
+
+-- 8. Dashavidha gunas (20 poles, 10 pairs) for ingredient / food tagging
+CREATE TABLE IF NOT EXISTS ref_guna (
+    id TEXT PRIMARY KEY,
+    pair_code TEXT NOT NULL,
+    pole TEXT NOT NULL,
+    sanskrit TEXT NOT NULL,
+    name_ru TEXT NOT NULL,
+    sort_order INTEGER NOT NULL
+);
+
+-- 9. Mouthfeel (organoleptic) — separate from classical gunas
+CREATE TABLE IF NOT EXISTS ref_mouthfeel (
+    id TEXT PRIMARY KEY,
+    name_ru TEXT NOT NULL,
+    sort_order INTEGER NOT NULL
 );

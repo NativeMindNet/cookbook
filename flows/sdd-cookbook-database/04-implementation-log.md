@@ -13,6 +13,11 @@
 
 ## Сессии
 
+### 2026-05-03 (обновление)
+
+- Таблицы `ref_taste`, `ref_guna`, `ref_mouthfeel` и сиды — в `001_init.sql` / `001_seed.sql`; апгрейд с версии БД 1 на 2 — `002_upgrade_to_v2.sql`, `DatabaseService` версия 2 с `onUpgrade`.
+- `BookRepository`: `getRefTastes()`, `getRefGunas()`, `getRefMouthfeels()`.
+
 ### 2026-05-03
 
 - Создан `DatabaseService` для управления SQLite.

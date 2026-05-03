@@ -7,3 +7,6 @@ export 'paragraph_style.dart';
 export 'animation_config.dart';
 export 'control_info.dart';
 export 'bookmark.dart';
+export 'ref_taste.dart';
+export 'ref_guna.dart';
+export 'ref_mouthfeel.dart';

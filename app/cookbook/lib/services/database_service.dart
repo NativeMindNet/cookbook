@@ -31,12 +31,18 @@ class DatabaseService {
 
       _db = await openDatabase(
         path,
-        version: 1,
+        version: 2,
         onCreate: (db, version) async {
           print('Creating database...');
           await _runSqlFile(db, 'assets/db/migrations/001_init.sql');
           await _runSqlFile(db, 'assets/db/seeds/001_seed.sql');
           print('Database created and seeded.');
+        },
+        onUpgrade: (db, oldVersion, newVersion) async {
+          if (oldVersion < 2) {
+            print('Upgrading database $oldVersion -> $newVersion');
+            await _runSqlFile(db, 'assets/db/migrations/002_upgrade_to_v2.sql');
+          }
         },
       );
       _initCompleter.complete();
