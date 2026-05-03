@@ -24,31 +24,53 @@ class DatabaseService {
       final dbPath = await getDatabasesPath();
       final path = join(dbPath, 'cookbook.db');
 
+      // For development: delete database to re-create with new schema
+      // await deleteDatabase(path); 
+
+      print('Initializing database at $path');
+
       _db = await openDatabase(
         path,
         version: 1,
         onCreate: (db, version) async {
+          print('Creating database...');
           await _runSqlFile(db, 'assets/db/migrations/001_init.sql');
           await _runSqlFile(db, 'assets/db/seeds/001_seed.sql');
+          print('Database created and seeded.');
         },
       );
       _initCompleter.complete();
     } catch (e) {
+      print('Database Init Error: $e');
       _initCompleter.completeError(e);
       rethrow;
     }
   }
 
   Future<void> _runSqlFile(Database db, String assetPath) async {
+    print('Running SQL file: $assetPath');
     final sqlContent = await rootBundle.loadString(assetPath);
+    
+    // Improved splitting: match semicolon followed by newline or end of string
+    // This avoids splitting inside strings if they don't contain ;\n
     final statements = sqlContent
-        .split(';')
+        .split(RegExp(r';\s*\n'))
         .map((s) => s.trim())
-        .where((s) => s.isNotEmpty && !s.startsWith('--'))
+        .where((s) => s.isNotEmpty)
         .toList();
 
-    for (final statement in statements) {
-      await db.execute(statement);
+    for (var statement in statements) {
+      // Remove comments and clean up
+      statement = statement.replaceAll(RegExp(r'--.*'), '').trim();
+      if (statement.isEmpty) continue;
+      
+      try {
+        await db.execute(statement);
+      } catch (e) {
+        print('Error executing statement: $statement');
+        print('Error: $e');
+        rethrow;
+      }
     }
   }
 }

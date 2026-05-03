@@ -11,10 +11,13 @@ import 'config/app_config.dart';
 import 'router/app_router.dart';
 import 'router/deep_link_listener.dart';
 import 'router/uri_resolver.dart';
+import 'services/database_service.dart';
+import 'services/book_repository.dart';
 import 'widgets/install_app_prompt.dart';
 
 // Bloc imports
 import 'bloc/book/book_bloc.dart';
+import 'bloc/book/book_event.dart';
 import 'bloc/search/search_bloc.dart';
 import 'bloc/bookmarks/bookmarks_bloc.dart';
 import 'bloc/audio/audio_bloc.dart';
@@ -46,11 +49,16 @@ Future<void> main() async {
 
   final router = createAppRouter(initialLocation: initialLocation);
 
+  final dbService = DatabaseService();
+  await dbService.init();
+  final bookRepository = BookRepository();
+
   runApp(
     CookbookRoot(
       config: config,
       resolver: resolver,
       router: router,
+      bookRepository: bookRepository,
     ),
   );
 }
@@ -61,70 +69,79 @@ class CookbookRoot extends StatelessWidget {
     required this.config,
     required this.resolver,
     required this.router,
+    required this.bookRepository,
   });
 
   final AppConfig config;
   final UriResolver resolver;
   final GoRouter router;
+  final BookRepository bookRepository;
 
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(
-      providers: [
-        BlocProvider(create: (_) => BookBloc()),
-        BlocProvider(
-          create: (context) => SearchBloc(
-            bookGetter: () => context.read<BookBloc>().state.book,
+    return RepositoryProvider.value(
+      value: bookRepository,
+      child: MultiBlocProvider(
+        providers: [
+          BlocProvider(
+            create: (context) => BookBloc(
+              repository: context.read<BookRepository>(),
+            )..add(BookLoadRequested()),
           ),
+          BlocProvider(
+            create: (context) => SearchBloc(
+              bookGetter: () => context.read<BookBloc>().state.book,
+            ),
+          ),
+          BlocProvider(
+            create: (_) => BookmarksBloc(
+              storageService: BookmarkStorageService(),
+            )..add(const BookmarksLoadRequested()),
+          ),
+          BlocProvider(create: (_) => AudioBloc()),
+          BlocProvider(
+            create: (_) => SettingsBloc()..add(const SettingsLoadRequested()),
+          ),
+        ],
+        child: BlocBuilder<SettingsBloc, dynamic>(
+          builder: (context, settingsState) {
+            return MaterialApp.router(
+              title: 'Вегетарианская кухня Востока',
+              theme: _buildTheme(Brightness.light),
+              darkTheme: _buildTheme(Brightness.dark),
+              themeMode: settingsState.themeMode ?? ThemeMode.system,
+              locale: settingsState.locale,
+              localizationsDelegates: const [
+                GlobalMaterialLocalizations.delegate,
+                GlobalWidgetsLocalizations.delegate,
+                GlobalCupertinoLocalizations.delegate,
+              ],
+              supportedLocales: const [
+                Locale('ru'),
+                Locale('zh'),
+                Locale('th'),
+                Locale('hi'),
+                Locale('ja'),
+              ],
+              routerConfig: router,
+              builder: (context, child) {
+                final body = DeepLinkListener(
+                  resolver: resolver,
+                  router: router,
+                  child: child ?? const SizedBox.shrink(),
+                );
+                if (!kIsWeb) return body;
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Expanded(child: body),
+                    InstallAppPrompt(config: config),
+                  ],
+                );
+              },
+            );
+          },
         ),
-        BlocProvider(
-          create: (_) => BookmarksBloc(
-            storageService: BookmarkStorageService(),
-          )..add(const BookmarksLoadRequested()),
-        ),
-        BlocProvider(create: (_) => AudioBloc()),
-        BlocProvider(
-          create: (_) => SettingsBloc()..add(const SettingsLoadRequested()),
-        ),
-      ],
-      child: BlocBuilder<SettingsBloc, dynamic>(
-        builder: (context, settingsState) {
-          return MaterialApp.router(
-            title: 'Вегетарианская кухня Востока',
-            theme: _buildTheme(Brightness.light),
-            darkTheme: _buildTheme(Brightness.dark),
-            themeMode: settingsState.themeMode ?? ThemeMode.system,
-            locale: settingsState.locale,
-            localizationsDelegates: const [
-              GlobalMaterialLocalizations.delegate,
-              GlobalWidgetsLocalizations.delegate,
-              GlobalCupertinoLocalizations.delegate,
-            ],
-            supportedLocales: const [
-              Locale('ru'),
-              Locale('zh'),
-              Locale('th'),
-              Locale('hi'),
-              Locale('ja'),
-            ],
-            routerConfig: router,
-            builder: (context, child) {
-              final body = DeepLinkListener(
-                resolver: resolver,
-                router: router,
-                child: child ?? const SizedBox.shrink(),
-              );
-              if (!kIsWeb) return body;
-              return Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Expanded(child: body),
-                  InstallAppPrompt(config: config),
-                ],
-              );
-            },
-          );
-        },
       ),
     );
   }

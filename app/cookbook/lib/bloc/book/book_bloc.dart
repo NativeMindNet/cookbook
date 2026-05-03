@@ -2,9 +2,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'book_event.dart';
 import 'book_state.dart';
 import '../../models/book.dart';
+import '../../services/book_repository.dart';
 
 class BookBloc extends Bloc<BookEvent, BookState> {
-  BookBloc() : super(const BookState()) {
+  final BookRepository repository;
+
+  BookBloc({required this.repository}) : super(const BookState()) {
     on<BookLoadRequested>(_onLoadRequested);
     on<BookPageChanged>(_onPageChanged);
     on<BookNextPageRequested>(_onNextPage);
@@ -20,9 +23,23 @@ class BookBloc extends Bloc<BookEvent, BookState> {
     emit(state.copyWith(status: BookStatus.loading));
 
     try {
-      // TODO: Replace with actual book loading from assets/data
-      // For now, create a placeholder book
-      final book = _createPlaceholderBook();
+      final sections = await repository.getSections();
+      final pages = await repository.getPages();
+
+      final book = Book(
+        header: const BookHeader(
+          id: '1',
+          title: 'Вегетарианская кухня Востока',
+          language: 'ru',
+          sourceLanguage: 'ru',
+          orientation: BookOrientation.portrait,
+        ),
+        body: BookBody(
+          pages: pages,
+          sections: sections,
+          styles: {},
+        ),
+      );
 
       emit(state.copyWith(
         status: BookStatus.loaded,
